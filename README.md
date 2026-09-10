@@ -43,11 +43,31 @@ Startups either succeed (get acquired) or fail (shut down). Using structured his
 
 | Model | Accuracy | Precision | Recall | F1 Score |
 |---|---|---|---|---|
-| Logistic Regression | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
-| Random Forest | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
-| XGBoost | _TBD_ | _TBD_ | _TBD_ | _TBD_ |
+| Logistic Regression | 0.730 | 0.792 | 0.792 | 0.792 |
+| Random Forest | **0.784** | 0.817 | **0.858** | **0.837** |
+| XGBoost | 0.757 | 0.800 | 0.833 | 0.816 |
 
-*(Fill in after running the script — see `Confusion Matrix` output for per-class breakdown.)*
+**Best model: Random Forest** — highest accuracy and F1-score among the three.
+
+### Confusion Matrices
+
+**Logistic Regression**
+```
+[[40 25]
+ [25 95]]
+```
+
+**Random Forest**
+```
+[[42 23]
+ [17 103]]
+```
+
+**XGBoost**
+```
+[[40 25]
+ [20 100]]
+```
 
 ---
 
